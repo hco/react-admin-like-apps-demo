@@ -28,17 +28,17 @@ export const MagicTable: React.FunctionComponent<PropsWithChildren> = ({
     <Table>
       <TableHeader>
         <TableRow>
-          {columns.map((column) => (
-            <TableHead>{column.props.name}</TableHead>
+          {columns.map((column, index) => (
+            <TableHead key={index}>{column.props.name}</TableHead>
           ))}
         </TableRow>
       </TableHeader>
       <TableBody>
-        {resources.map((resource) => (
-          <ResourceContextProvider resource={resource}>
+        {resources.map((resource, index) => (
+          <ResourceContextProvider resource={resource} key={index}>
             <TableRow>
-              {columns.map((column) => (
-                <MagicTableColumn {...column.props} />
+              {columns.map((column, index) => (
+                <MagicTableColumn {...column.props} key={index} />
               ))}
             </TableRow>
           </ResourceContextProvider>
