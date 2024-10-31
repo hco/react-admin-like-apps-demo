@@ -1,5 +1,5 @@
 import { Example } from "./demo/Example";
-import { WorkingExample } from "./demo/WorkingExample";
+import { WorkingExample } from "./demo/step1-single-resource/WorkingExample";
 
 function App() {
   return (
