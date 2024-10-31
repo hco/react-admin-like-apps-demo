@@ -10,12 +10,7 @@ import {
 } from "@/components/ui/table";
 import { ResourceContextProvider } from "./ResourceContext";
 import { Field } from "./Field";
-
-type LogMessage = {
-  "@timestamp": string;
-  severity: string;
-  message: string;
-};
+import { LogMessage } from "../LogMessage";
 
 export const WorkingExample: React.FunctionComponent = () => {
   return (
