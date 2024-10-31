@@ -1,0 +1,35 @@
+{
+  "logMessages": [
+    {
+      "@timestamp": "2024-10-31T08:57:41.579Z",
+      "message": "Fetch complete. Created 0 items, updated 0 items, deleted 0 items.\n           There are more items.",
+      "severity": "debug",
+      "fields": {
+        "context": "DataSourceFetcher",
+        "fetchResult": {
+          "hasMoreItems": true,
+          "stats": {
+            "created": 0,
+            "updated": 0,
+            "metadataOnlyUpdated": 0,
+            "deleted": 0
+          }
+        },
+        "dataSourceId": "155ec774-9da1-402c-bd04-f5c5ee9d0fe8"
+      },
+      "_id": "1KLL4ZIBw5Csw0kne1p_",
+      "_nextCursor": [1730365061579]
+    },
+    {
+      "@timestamp": "2024-10-31T08:57:41.578Z",
+      "message": "State of 155ec774-9da1-402c-bd04-f5c5ee9d0fe8 is unchanged",
+      "severity": "debug",
+      "fields": {
+        "context": "ReaderDataSource",
+        "dataSourceId": "155ec774-9da1-402c-bd04-f5c5ee9d0fe8"
+      },
+      "_id": "1aLL4ZIBw5Csw0kne1p_",
+      "_nextCursor": [1730365061578]
+    }
+  ]
+}
