@@ -11,8 +11,6 @@ export const BackendResources = ({ url, children }: Props) => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log("fetched data", data);
-
         setData(data);
       });
   }, [url]);
@@ -21,7 +19,6 @@ export const BackendResources = ({ url, children }: Props) => {
     return <div>Loading...</div>;
   }
 
-  console.log({ data });
   return (
     <ResourceListContextProvider resources={data}>
       {children}

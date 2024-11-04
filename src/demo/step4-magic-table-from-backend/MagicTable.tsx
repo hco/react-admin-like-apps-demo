@@ -15,7 +15,6 @@ export const MagicTable: React.FunctionComponent<PropsWithChildren> = ({
   children,
 }) => {
   const { resources } = useResourceListContext();
-  console.log(resources);
   const columns = Children.toArray(children).filter(
     (
       child,
